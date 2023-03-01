@@ -8,11 +8,11 @@ const client = new MongoClient(url);
 const dbConnect = async () => {
   let response = await client.connect();
 
-  let datebase = response.db("e-commerce");
+  let database = response.db("e-commerce");
 
   // let collection = datebase.collection("product");
 
-  return datebase.collection("product");
+  return database.collection("product");
 
   // let result = await collection.find({}).toArray();
 
