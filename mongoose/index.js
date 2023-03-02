@@ -11,12 +11,12 @@ const main = async () => {
     lastName: String,
     email: String,
   });
-  const ProductModal = mongoose.model("product", ProductScheme);
+  const ProductModal = mongoose.model("products", ProductScheme);
 
   let data = new ProductModal({
-    name: "Hassan Javed",
-    lastName: "Javed",
-    email: "Hassanali@gmail.com",
+    name: "Hamda Javed",
+    lastName: "Ali",
+    email: "Hamadali@gmail.com",
   });
 
   let result = await data.save();

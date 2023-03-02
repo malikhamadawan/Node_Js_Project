@@ -12,7 +12,7 @@ const dbConnect = async () => {
 
   // let collection = datebase.collection("product");
 
-  return database.collection("product");
+  return database.collection("products");
 
   // let result = await collection.find({}).toArray();
 
